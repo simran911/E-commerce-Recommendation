@@ -58,28 +58,30 @@ Set up the database and configure the necessary environment variables (refer to 
 Run the system:
 
 For local testing:
+
 bash
 Copy code
 python app.py
 For deploying to production, follow the deployment guide in the Deployment section below.
+
 Usage
 Training the Model:
+The model is trained using historical user data such as interactions, purchases, and ratings. You can run the training script to build the recommendation model:
 
-The model is trained using historical user data such as interactions, purchases, and ratings.
-You can run the training script to build the recommendation model:
 bash
 Copy code
 python train_model.py
 The trained model is saved and can be loaded for making predictions.
-Getting Recommendations:
 
+Getting Recommendations:
 The system can be queried for recommendations for a given user ID. Example:
+
 bash
 Copy code
 python recommend.py --user_id 12345
 API Integration:
-
 The system can be integrated into an e-commerce platform via API calls. Use the provided API endpoints to get product recommendations for users:
+
 bash
 Copy code
 GET /api/recommendations?user_id=<user_id>
@@ -127,5 +129,5 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Acknowledgments
-The project uses collaborative filtering and content-based filtering algorithms from the Scikit-learn library.
-Special thanks to contributors and community members for suggestions and improvements.
+The project uses collaborative filtering and content-based filtering algorithms from the Scikit-learn library. Special thanks to contributors and community members for suggestions and improvements.
+
